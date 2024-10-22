@@ -38,7 +38,7 @@ const createRequest = (options = {}) => {
 });
 
     try {
-        xhr.open(options.method, url.href);
+        xhr.open(options.method, url);
 
         xhr.send(options.method === 'GET' ? null : formData); 
     } catch (e) {
